@@ -24,9 +24,9 @@
 <h1>Programming Languages</h1>
 <ul>
     <!-- Fix this argument based each block. It should look like the original at the top -->
-    <!-- {!eac programmingLanguages as {name, executionType, difficulty} } -->
-        <!-- <li>{name}: {executionType}, {speed}, {difficulty}</li> -->
-    <!-- {#each} -->
+    {#each programmingLanguages as {name, executionType, speed, difficulty} }
+        <li>{name}: {executionType}, {speed}, {difficulty}</li>
+    {/each}
 </ul>
 
 <br><br>
@@ -34,7 +34,7 @@
 <h1>Programming Languages</h1>
 <ul>
     <!-- Fix this object based each block. It should look like the original at the top -->
-    <!-- {#each programmingLanguage in language } -->
-        <!-- <li>{language.name}: {language.speed}, {language.dificulty}</li> -->
-    <!-- {/each} -->
+    {#each programmingLanguages as language}
+        <li>{language.name}: {language.executionType}, {language.speed}, {language.difficulty}</li>
+    {/each}
 </ul>

@@ -3,10 +3,10 @@
 
     let things = [
 		{ id: 1, color: 'darkblue' },
-		{ color: 'indigo' },
-		{ color: 'deeppink' },
-		{ color: 'salmon' },
-		{ color: 'gold' }
+		{ id: 2, color: 'indigo' },
+		{ id: 3, color: 'deeppink' },
+		{ id: 4, color: 'salmon' },
+		{ id: 5, color: 'gold' }
 	];
 
 	function handleClick() {
@@ -27,7 +27,7 @@
 
             Note: You may also need to add missing information to the "things" variable in the <script> above to make this work.
          -->
-		{#each things as thing}
+		{#each things as thing (thing.id)}
 			<Thing current={thing.color}/>
 		{/each}
 	</div>

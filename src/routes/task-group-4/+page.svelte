@@ -24,4 +24,4 @@
 
     Note: You could struggle with this one. If you can't figure it out after an hour move on and we will go over it together
  -->
-<MyButton click_event={say_hi} text="Say Hi"></MyButton>
+ <MyButton click_event={say_hi} text="Say Hi"></MyButton>

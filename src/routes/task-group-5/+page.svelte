@@ -40,10 +40,10 @@
 <br><br>
 
 <!-- Fix the syntax below and make the kitten images load and the error message display if failed-->
-<!-- {await kitten} -->
+{#await kitten}
 	<p>...waiting</p>
-<!-- {:then url} -->
-	<img src="" alt="Kitten">
-<!-- {#catch error -->
-	<p style="color: red">error.message</p>
-<!-- {await} -->
+{:then url}
+	<img src="{url}" alt="Kitten">
+{:catch error}
+	<p style="color: red">{error.message}</p>
+{/await}

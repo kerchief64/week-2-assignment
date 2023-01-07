@@ -33,7 +33,8 @@
 
     let x = 5
 
-    let user = new User("Joe", UserPermissions.guest())
+    // let user = new User("Joe", UserPermissions.guest())
+    let user = new User("Jeffery", UserPermissions.guest())
 
 </script>
 
@@ -43,25 +44,27 @@
 <!-- Challenge: Get rid of all the <p>failed</p> elements without deleting or modifying them -->
 
 <!-- Uncomment and fix the syntax below to get rid of the failed element -->
-<!-- if x!==5} -->
+{#if x!==5}
     <p>failed</p>
-<!-- {if} -->
+{/if}
 
 
 <!-- 
     Fix the syntax, but do not change the main equations. 
     Instead, replace the failed elements with a success element by changing the "user" variable in the <script> above
 -->
-<!-- {if user.name === "Joe" -->
+{#if user.name === "Joe"}
     <p>Failed</p>
-<!-- else if user.name === "Jeffery"} -->
+{:else if user.name === "Jeffery"}
     <p>Success</p>
-<!-- {::else} -->
+{:else}
     <p>Failed</p>
-<!-- {/if/} -->
+{/if}
 
 <!-- 
     Create a svelte if block around the failed element below to hide it. 
     You may do this in a couple different ways, but use the x variable (unchanged) to do it 
 -->
-<p>Failed</p>
+{#if x === Symbol }
+    <p>Failed</p>
+{/if}
